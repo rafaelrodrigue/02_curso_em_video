@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+      width: 500px;
+      border-collapse: collapse;
+      position: relative; /*1° parte pra mater o cabeçalho fixo*/
+    }
+
+    td, th{
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    caption{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgrey;
+    }
+
+    tbody tr:nth-child(even){ /*efeito zebrado na tabela - odd linhas impares - even linhas pares - 2n linha sim linha não*/
+      background-color: lightsalmon;
+    }
+
+    tbody tr:nth-child(odd){
+      background-color: lightskyblue;
+    }
+
+    thead, tfoot{
+      background-color: gray;
+      color: white;
+    }
+
+    thead tr th{
+      position: sticky; /*2° parte pra mater o cabeçalho fixo*/
+      top: 0;/*3° parte pra mater o cabeçalho fixo*/
+      background-color: grey;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Uso de tabelas grandes</h1>
+  <!--
+      Anatomia para tabelas grandes
+        TABLE
+          CAPTION -legenda
+          THEAD
+            TR, TD, TH
+          TBODY
+            TR, TD, TH
+          TFOOT
+            TR, TD, TH
+  -->
+    <table>
+      <caption>População da unidades federativas</caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col">População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td>45.919.049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21.168.791</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17.264.943</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td>14.873.064</td>
+        </tr>
+        <tr>
+          <td>Paraná</td>
+          <td>11.433.957</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total de Habitantes</th>
+          <td>0000</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore ea assumenda rem qui odio sunt numquam error ipsam alias eligendi amet doloremque, repellat eaque quas praesentium itaque nihil quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus, debitis temporibus similique dignissimos quae repellat dolorum fugiat iure minima odit accusamus deleniti, earum eius quibusdam harum ipsam, corporis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi beatae earum voluptatibus vel reiciendis dolorum nihil itaque perferendis incidunt, et aliquam laboriosam autem voluptas architecto ipsa fuga praesentium rerum!</p>
+</body>
+</html>
