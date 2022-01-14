@@ -7,4 +7,4 @@ function resetaCor(cor){
 
 console.log(corSite);
 resetaCor('Preto');
-console.log(corSite)
+console.log(corSite);
